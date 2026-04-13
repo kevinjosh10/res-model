@@ -928,3 +928,55 @@ h1, h2, h3, h4, .logo {
         text-align: center;
     }
 }
+
+/* =========================================
+   UNIQUE ASYMMETRICAL & GEOMETRIC OVERRIDES
+   ========================================= */
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+}
+.hero {
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+.hero-content {
+    margin-left: 5%;
+    max-width: 800px;
+}
+.menu-card {
+    border-radius: 60px 0 60px 0;
+    border: none;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+.menu-img-wrapper {
+    border-radius: 60px 0 0 0;
+    height: 300px;
+}
+.about-grid {
+    align-items: center;
+}
+.img-frame::after {
+    border-radius: 200px 200px 0 0;
+    border: 3px solid var(--color-accent);
+    top: -30px; left: 30px;
+}
+.img-frame img {
+    border-radius: 200px 200px 0 0;
+}
+.benefit-card {
+    border-radius: 30px;
+    background: linear-gradient(135deg, var(--color-bg-surface-light), var(--color-bg-surface));
+    border: 1px solid var(--color-border);
+}
+.reservation-wrapper {
+    border-radius: 50px;
+}
+.social-proof {
+    background: linear-gradient(135deg, var(--color-bg-surface), var(--color-bg-dark));
+}
+.gallery-item {
+    border-radius: 30px;
+    margin: 0 10px;
+}
