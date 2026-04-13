@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Menu, X, Star, Leaf, Wine, Sofa, Phone, Mail, Clock, ArrowRight, Search, Instagram } from 'lucide-react';
+import { Menu, X, Star, Leaf, Wine, Sofa, Phone, Mail, Clock, ArrowRight, Search } from 'lucide-react';
 
 const ASSETS = {
   hero: '/assets/lumina_hero_1776057768014.png',
@@ -104,7 +104,7 @@ const Hero = () => {
         initial="hidden" animate="visible" variants={fadeUpVariant}
         className="max-w-[900px] px-6 z-10"
       >
-        <h1 className="text-5xl md:text-7xl leading-tight mb-6 drop-shadow-2xl">
+        <h1 className="text-4xl md:text-7xl leading-tight mb-6 drop-shadow-2xl">
           Tasting the Extraordinary,<br />Every Single Night.
         </h1>
         <p className="text-lg md:text-xl text-text-muted mb-12 max-w-[600px] mx-auto">
@@ -148,7 +148,7 @@ const MenuPreview = () => {
   ];
 
   return (
-    <section id="menu" className="py-32 section-container">
+    <section id="menu" className="py-20 md:py-32 section-container">
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant}>
         <span className="subheading">Culinary Masterpieces</span>
         <h2 className="text-4xl md:text-5xl">Our Signature Creations</h2>
@@ -180,8 +180,8 @@ const MenuPreview = () => {
 };
 
 const AboutSection = () => (
-  <section id="about" className="py-32 bg-bg-surface">
-    <div className="section-container grid md:grid-cols-2 gap-20 items-center">
+  <section id="about" className="py-20 md:py-32 bg-bg-surface">
+    <div className="section-container grid md:grid-cols-2 gap-10 md:gap-20 items-center">
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant}>
         <span className="subheading">The Lumina Story</span>
         <h2 className="text-4xl md:text-5xl leading-tight mb-6">A Passion for the Extraordinary.</h2>
@@ -209,7 +209,7 @@ const Benefits = () => {
     { icon: <Sofa size={32}/>, title: 'Intimate Ambience', desc: 'Designed for privacy and comfort, our dining room provides a luxurious atmosphere for your most important occasions.' },
   ];
   return (
-    <section className="py-32 section-container">
+    <section className="py-20 md:py-32 section-container">
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant} className="text-center">
         <span className="subheading mx-auto">The Lumina Standard</span>
         <h2 className="text-4xl md:text-5xl">Why Dine With Us</h2>
@@ -245,7 +245,7 @@ const ReservationForm = () => {
   };
 
   return (
-    <section id="reservation" className="py-32 bg-bg-surface">
+    <section id="reservation" className="py-20 md:py-32 bg-bg-surface">
       <div className="section-container">
         <div className="grid md:grid-cols-2 bg-bg-dark border border-[#333] overflow-hidden">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant} 
@@ -327,7 +327,7 @@ const Footer = () => (
         <a href="#" className="font-heading font-semibold text-3xl tracking-widest text-text-main block mb-6">Lumina.</a>
         <p className="text-text-muted max-w-sm mb-8">Elevating modern cuisine to an unforgettable journey of flavors.</p>
         <div className="flex gap-4">
-          <a href="#" className="w-10 h-10 border border-[#333] flex items-center justify-center rounded-full hover:bg-accent hover:border-accent hover:text-black transition-colors"><Instagram size={18}/></a>
+          <a href="#" className="w-10 h-10 border border-[#333] flex items-center justify-center font-bold rounded-full hover:bg-accent hover:border-accent hover:text-black transition-colors">IG</a>
         </div>
       </div>
       <div>
