@@ -1,16 +1,323 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Dining | Fine Dining Experience</title>
+    <meta name="description" content="Experience extraordinary fine dining at Lumina. Tasting the extraordinary, every single night. Reserve your table today.">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>Lumina Dining | Fine Dining Experience</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Lumina.</a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">Our Story</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#reservation" class="btn btn-outline">Reserve a Table</a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <div class="mobile-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Our Story</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#reservation" class="btn btn-outline" style="margin-top: 2rem;">Reserve a Table</a>
+        </div>
+    </div>
+
+    <!-- 1. Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('assets/lumina_hero_1776057768014.png');"></div>
+        <div class="hero-content fade-in-up">
+            <h1 class="hero-title">Tasting the Extraordinary,<br>Every Single Night.</h1>
+            <p class="hero-subtitle">Immerse yourself in a fine dining experience that elevates modern culinary arts to an unforgettable journey of flavors.</p>
+            <div class="hero-cta">
+                <a href="#reservation" class="btn btn-primary">Reserve a Table</a>
+                <a href="#menu" class="btn btn-secondary">Order Now</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+        </div>
+    </section>
+
+    <!-- 2. Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-wrapper section-fade">
+                <div class="proof-item">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"A masterclass in modern cuisine. Simply flawless."</p>
+                    <span>- The Culinary Chronicle</span>
+                </div>
+                <div class="proof-item center-proof">
+                    <h3>Trusted by 10,000+ Guests</h3>
+                    <p>Awarded Michelin Excellence 2025</p>
+                </div>
+                <div class="proof-item">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"The best dining experience I've had this year."</p>
+                    <span>- Sarah Jenkins, Food Critic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Menu Preview -->
+    <section class="menu-preview" id="menu">
+        <div class="container">
+            <div class="section-header section-fade">
+                <span class="subheading">Culinary Masterpieces</span>
+                <h2>Our Signature Creations</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="menu-grid">
+                <!-- Dish 1 -->
+                <div class="menu-card section-fade delay-1">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/menu_wagyu_1776057785268.png" alt="Wagyu Beef Steak">
+                        <div class="price-tag">$85</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>A5 Wagyu Tenderloin</h3>
+                        <p>Charcoal seared Japanese Wagyu with black truffle velvet puree, charred asparagus, and bone marrow demi-glace.</p>
+                    </div>
+                </div>
+                <!-- Dish 2 -->
+                <div class="menu-card section-fade delay-2">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/menu_scallops_1776057804686.png" alt="Pan-seared Scallops">
+                        <div class="price-tag">$42</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Hokkaido Sea Scallops</h3>
+                        <p>Pan-seared perfection resting on saffron infused carnaroli risotto with micro-herbs and a meyer lemon emulsion.</p>
+                    </div>
+                </div>
+                <!-- Dish 3 -->
+                <div class="menu-card section-fade delay-3">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/menu_dessert_1776057821547.png" alt="Dark Chocolate Lava Cake">
+                        <div class="price-tag">$24</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Valrhona Lava Cake</h3>
+                        <p>Rich 72% dark chocolate fondant center, adorned with 24k gold leaf and a vibrant wild raspberry coulis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta section-fade delay-4">
+                <a href="#" class="btn btn-outline-dark">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. About Section -->
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-content section-fade">
+                <span class="subheading">The Lumina Story</span>
+                <h2>A Passion for the Extraordinary.</h2>
+                <div class="divider align-left"></div>
+                <p>Founded in 2018, Lumina was born out of a desire to create a dining experience that transcends the ordinary. We believe that fine dining should be an emotional journey, an interplay of textures, temperatures, and memories.</p>
+                <p>Chef Alexander Thorne brings over two decades of experience from the world's most prestigious kitchens. His philosophy is simple: respect the ingredient, elevate the technique, and present it with uncompromising elegance.</p>
+                <a href="#reservation" class="btn btn-primary mt-4">Experience Lumina</a>
+            </div>
+            <div class="about-image section-fade delay-2">
+                <div class="img-frame">
+                    <img src="assets/about_chef_1776057839847.png" alt="Executive Chef cooking">
+                </div>
+                <div class="experience-badge">
+                    <span class="number">20+</span>
+                    <span class="text">Years of<br>Excellence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Why Choose Us -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header text-center section-fade">
+                <span class="subheading">The Lumina Standard</span>
+                <h2>Why Dine With Us</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card section-fade delay-1">
+                    <div class="icon-wrapper"><i class="fas fa-leaf"></i></div>
+                    <h3>Sustainably Sourced</h3>
+                    <p>We partner directly with local farmers and artisans to bring you only the freshest, seasonal ingredients daily.</p>
+                </div>
+                <div class="benefit-card section-fade delay-2">
+                    <div class="icon-wrapper"><i class="fas fa-wine-glass"></i></div>
+                    <h3>Curated Pairings</h3>
+                    <p>Our Master Sommelier meticulously pairs our rotating menu with rare and exceptional vintages from around the globe.</p>
+                </div>
+                <div class="benefit-card section-fade delay-3">
+                    <div class="icon-wrapper"><i class="fas fa-couch"></i></div>
+                    <h3>Intimate Ambience</h3>
+                    <p>Designed for privacy and comfort, our dining room provides a luxurious atmosphere for your most important occasions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Reservation System -->
+    <section class="reservation-section" id="reservation">
+        <div class="container reservation-wrapper">
+            <div class="reservation-info section-fade">
+                <h2>Secure Your Table</h2>
+                <p>Reservations are highly recommended. For parties of 6 or more, please contact us directly via phone.</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>reservations@luminadining.com</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-clock"></i>
+                        <span>Tue - Sun: 5:00 PM - 11:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reservation-form section-fade delay-2">
+                <form id="booking-form">
+                    <h3>Make a Reservation</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" required>
+                                <option value="" disabled selected>Select Time</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests" required>
+                            <option value="1">1 Person</option>
+                            <option value="2" selected>2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Confirm Reservation</button>
+                    <div class="form-success tooltip" id="form-success">Table requested! We will email you shortly.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container-fluid">
+            <div class="gallery-grid">
+                <div class="gallery-item section-fade">
+                    <img src="assets/gallery_interior_1776057868149.png" alt="Restaurant Interior">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item section-fade delay-1">
+                    <img src="assets/gallery_wine_1776057885635.png" alt="Wine Serving">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item section-fade delay-2">
+                    <img src="assets/gallery_plating_1776057902403.png" alt="Dish Plating">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer & Location -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">Lumina.</a>
+                <p>Elevating modern cuisine to an unforgettable journey of flavors.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#about">The Story</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Visit Us</h4>
+                <p>123 Culinary Avenue<br>New York, NY 10001</p>
+                <p class="mt-2"><strong>Hours:</strong></p>
+                <p>Tuesday - Sunday: 5PM - 11PM<br>Monday: Closed</p>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe for seasonal menu updates and exclusive event invitations.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Lumina Dining. All Rights Reserved.</p>
+                <p class="footer-legal">
+                    <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
