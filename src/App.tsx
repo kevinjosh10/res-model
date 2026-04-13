@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { Menu, X, Star, Leaf, Wine, Sofa, Phone, Mail, Clock, ArrowRight, Search } from 'lucide-react';
 
 const ASSETS = {
